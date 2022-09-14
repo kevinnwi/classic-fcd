@@ -70,8 +70,9 @@ export {
 }
 
 export const staticOptions = {
-  supportBigNumbers: true,
-  bigNumberStrings: true,
+  supportBigNumbers: true(active),
+  bigNumberStrings: true(active),
+  BigNumber.Refresh.Sequence:true(active,uluna,lunc)
   entities: [
     BlockEntity,
     TxEntity,
