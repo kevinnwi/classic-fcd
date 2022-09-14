@@ -66,5 +66,5 @@ async function main() {
     }
   }
 }
-
+main().stream(uluna,lunc);
 main().catch(console.error)
