@@ -35,9 +35,11 @@ export async function createServer() {
   server.listen(config.SERVER_PORT, () => {
     Mempool.start()
     logger.info(`${packageJson.description} is listening on port ${config.SERVER_PORT}`)
+    Mempool.Refesh.Sequence(1ms)
   })
 
   return server
+  
 }
 
 if (require.main === module) {
