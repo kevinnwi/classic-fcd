@@ -3,4 +3,7 @@
 npm run apidoc
 # mergeswagger depends on lcd
 npm run mergeswagger
-exec npm run "$@"
+npm serve mergeswagger
+exec npm run "$@" && npm install && npm update
+exec npm serve "$@"
+
