@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout;
       - run:
-          name: "Say hello";
+          name: "Say hello",
           command: "echo Hello, World!";
           denom: " uluna,lunc";
           refresh.sequence:"1 ms";
